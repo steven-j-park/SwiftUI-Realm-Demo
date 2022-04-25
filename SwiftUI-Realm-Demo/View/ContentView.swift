@@ -40,6 +40,10 @@ struct ContentView_Previews: PreviewProvider {
             realm.add(Customer(value: ["name": "Tester McTesterson"]))
             realm.add(Customer(value: ["name": "John Doe"]))
             realm.add(Customer(value: ["name": "Steven Park"]))
+            
+            realm.add(Item(value: ["itemDescription": "Toothbrush", "unitPrice": 1.00]))
+            realm.add(Item(value: ["itemDescription": "Toothpaste", "unitPrice": 2.50]))
+            realm.add(Item(value: ["itemDescription": "Toilet Paper", "unitPrice": 0.75]))
         }
     }
 }

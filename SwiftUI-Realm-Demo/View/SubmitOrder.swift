@@ -10,6 +10,7 @@ import RealmSwift
 
 struct SubmitOrder: View {
     @ObservedResults(Customer.self) var customers
+    @ObservedResults(Item.self) var items
     
     @State private var selectedCustomer = 0
     
@@ -23,6 +24,25 @@ struct SubmitOrder: View {
                         }
                     }
                 }
+                Section("Items to Order") {
+                    List {
+                        ForEach(items) { item in
+                            CheckView(title: item.itemDescription, unitPrice: String(format: "%.2f", item.unitPrice))
+                        }
+                    }
+                }
+                Button {
+                    return
+                } label: {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "cart.badge.plus")
+                        Text("Order Now")
+                        Spacer()
+                    }
+                    
+                }
+
             }
             .navigationTitle("Submit Order")
         }
