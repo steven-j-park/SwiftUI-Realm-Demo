@@ -18,6 +18,7 @@ struct CustomerList: View {
                     Text(customer.name)
                 }
             }
+            .navigationTitle("Customers")
         }
     }
 }
