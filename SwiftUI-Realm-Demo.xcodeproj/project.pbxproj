@@ -19,6 +19,7 @@
 		DB2530B52816FBC300E8BC90 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B42816FBC300E8BC90 /* OrderDetail.swift */; };
 		DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B72816FDAB00E8BC90 /* CustomerList.swift */; };
 		DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */; };
+		DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530BC2817277B00E8BC90 /* CheckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DB2530B42816FBC300E8BC90 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		DB2530B72816FDAB00E8BC90 /* CustomerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerList.swift; sourceTree = "<group>"; };
 		DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrder.swift; sourceTree = "<group>"; };
+		DB2530BC2817277B00E8BC90 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				DB25309D2816F1DD00E8BC90 /* ContentView.swift */,
 				DB2530B72816FDAB00E8BC90 /* CustomerList.swift */,
 				DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */,
+				DB2530BC2817277B00E8BC90 /* CheckView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */,
 				DB25309E2816F1DD00E8BC90 /* ContentView.swift in Sources */,
 				DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */,
+				DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */,
 				DB2530B52816FBC300E8BC90 /* OrderDetail.swift in Sources */,
 				DB2530B12816F97B00E8BC90 /* Order.swift in Sources */,
 				DB25309C2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift in Sources */,
