@@ -6,15 +6,31 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct SubmitOrder: View {
+    @ObservedResults(Customer.self) var customers
+    
+    @State private var selectedCustomer = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section {
+                    Picker("Order for", selection: $selectedCustomer) {
+                        ForEach(0..<customers.count, id: \.self) { index in
+                            Text(customers[index].name)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Submit Order")
+        }
     }
 }
 
 struct SubmitOrder_Previews: PreviewProvider {
     static var previews: some View {
-        SubmitOrder()
+        return SubmitOrder()
     }
 }
