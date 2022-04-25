@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
+    
+    
     var body: some View {
         TabView {
             CustomerList()
@@ -26,6 +29,17 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        sampleData()
+        return ContentView()
+    }
+    
+    static func sampleData() {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+            realm.add(Customer(value: ["name": "Tester McTesterson"]))
+            realm.add(Customer(value: ["name": "John Doe"]))
+            realm.add(Customer(value: ["name": "Steven Park"]))
+        }
     }
 }
