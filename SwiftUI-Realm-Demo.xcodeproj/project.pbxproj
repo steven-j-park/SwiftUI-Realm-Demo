@@ -13,6 +13,10 @@
 		DB2530A32816F1DE00E8BC90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2530A22816F1DE00E8BC90 /* Preview Assets.xcassets */; };
 		DB2530AB2816F3CF00E8BC90 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DB2530AA2816F3CF00E8BC90 /* Realm */; };
 		DB2530AD2816F3CF00E8BC90 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB2530AC2816F3CF00E8BC90 /* RealmSwift */; };
+		DB2530AF2816F51F00E8BC90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530AE2816F51F00E8BC90 /* Customer.swift */; };
+		DB2530B12816F97B00E8BC90 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B02816F97B00E8BC90 /* Order.swift */; };
+		DB2530B32816FB2E00E8BC90 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B22816FB2E00E8BC90 /* Item.swift */; };
+		DB2530B52816FBC300E8BC90 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B42816FBC300E8BC90 /* OrderDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		DB25309D2816F1DD00E8BC90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB25309F2816F1DE00E8BC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2530A22816F1DE00E8BC90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB2530AE2816F51F00E8BC90 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		DB2530B02816F97B00E8BC90 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		DB2530B22816FB2E00E8BC90 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DB2530B42816FBC300E8BC90 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 				DB25309D2816F1DD00E8BC90 /* ContentView.swift */,
 				DB25309F2816F1DE00E8BC90 /* Assets.xcassets */,
 				DB2530A12816F1DE00E8BC90 /* Preview Content */,
+				DB2530B62816FC9700E8BC90 /* Model */,
 			);
 			path = "SwiftUI-Realm-Demo";
 			sourceTree = "<group>";
@@ -69,6 +78,17 @@
 				DB2530A22816F1DE00E8BC90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB2530B62816FC9700E8BC90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2530AE2816F51F00E8BC90 /* Customer.swift */,
+				DB2530B02816F97B00E8BC90 /* Order.swift */,
+				DB2530B22816FB2E00E8BC90 /* Item.swift */,
+				DB2530B42816FBC300E8BC90 /* OrderDetail.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2530B32816FB2E00E8BC90 /* Item.swift in Sources */,
+				DB2530AF2816F51F00E8BC90 /* Customer.swift in Sources */,
 				DB25309E2816F1DD00E8BC90 /* ContentView.swift in Sources */,
+				DB2530B52816FBC300E8BC90 /* OrderDetail.swift in Sources */,
+				DB2530B12816F97B00E8BC90 /* Order.swift in Sources */,
 				DB25309C2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
