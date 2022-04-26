@@ -103,9 +103,17 @@
 				DB25309D2816F1DD00E8BC90 /* ContentView.swift */,
 				DB2530B72816FDAB00E8BC90 /* CustomerList.swift */,
 				DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */,
-				DB2530BC2817277B00E8BC90 /* CheckView.swift */,
+				DB2530BE2817A49400E8BC90 /* Helpers */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DB2530BE2817A49400E8BC90 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB2530BC2817277B00E8BC90 /* CheckView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
