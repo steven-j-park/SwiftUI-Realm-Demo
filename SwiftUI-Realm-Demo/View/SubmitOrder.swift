@@ -40,9 +40,7 @@ struct SubmitOrder: View {
                         Text("Order Now")
                         Spacer()
                     }
-                    
                 }
-
             }
             .navigationTitle("Submit Order")
         }
