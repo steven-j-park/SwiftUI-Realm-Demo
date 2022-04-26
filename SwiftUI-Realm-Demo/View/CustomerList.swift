@@ -15,7 +15,11 @@ struct CustomerList: View {
         NavigationView {
             List {
                 ForEach(customers) { customer in
-                    Text(customer.name)
+                    NavigationLink {
+                        
+                    } label: {
+                        Text(customer.name)
+                    }
                 }
             }
             .navigationTitle("Customers")
