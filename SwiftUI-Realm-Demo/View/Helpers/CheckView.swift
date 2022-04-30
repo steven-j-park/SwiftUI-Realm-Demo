@@ -12,6 +12,7 @@ struct CheckView: View {
     var title: String
     var unitPrice: String
     
+    
     var body: some View {
        Button(action: toggle){
            HStack{
