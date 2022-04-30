@@ -12,7 +12,12 @@ struct SubmitOrder: View {
     @ObservedResults(Customer.self) var customers
     @ObservedResults(Item.self) var items
     
+    @StateObject private var viewModel = ViewModel()
+    
     @State private var selectedCustomer = 0
+    @State private var selected = false
+    
+    @State private var showAlert = false
     
     var body: some View {
         NavigationView {
@@ -28,9 +33,27 @@ struct SubmitOrder: View {
                     List {
                         ForEach(items) { item in
                             CheckView(title: item.itemDescription, unitPrice: String(format: "%.2f", item.unitPrice))
+                                .onTapGesture {
+                                    viewModel.updateSelectedItems(item: item)
+                                }
                         }
                     }
                 }
+                Button("TEST ORDER DETAILS") {
+                    showAlert = true
+                }
+                .alert("DEBUG ORDER DETAILS", isPresented: $showAlert) {
+                    Button(role: .destructive) {
+                        
+                    } label: {
+                        Text("OK")
+                    }
+
+                } message: {
+                    Text("\(viewModel.selectedItems.count)")
+                }
+
+                
                 Button {
                     return
                 } label: {
@@ -47,8 +70,27 @@ struct SubmitOrder: View {
     }
 }
 
+extension SubmitOrder {
+    class ViewModel: ObservableObject {
+        @Published var selectedItems: [Item] = []
+        
+        func updateSelectedItems(item: Item) {
+            if (selectedItems.contains(item)) {
+                selectedItems.removeAll(where: { $0 == item })
+            }
+            else {
+                selectedItems.append(item)
+            }
+        }
+        
+        func orderItems() {
+            
+        }
+    }
+}
+
 struct SubmitOrder_Previews: PreviewProvider {
     static var previews: some View {
-        return SubmitOrder()
+        SubmitOrder()
     }
 }

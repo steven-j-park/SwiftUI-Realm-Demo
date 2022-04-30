@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CheckView: View {
     @State var isChecked: Bool = false
+    
     var title: String
     var unitPrice: String
-    
     
     var body: some View {
        Button(action: toggle){
@@ -35,6 +35,7 @@ struct CheckView: View {
 }
 
 struct CheckView_Previews: PreviewProvider {
+    
     static var previews: some View {
         Group {
             CheckView(title: "Toothbrush", unitPrice: String(format: "%.2f", 1.00))
