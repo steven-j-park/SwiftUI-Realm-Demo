@@ -70,25 +70,6 @@ struct SubmitOrder: View {
     }
 }
 
-extension SubmitOrder {
-    class ViewModel: ObservableObject {
-        @Published var selectedItems: [Item] = []
-        
-        func updateSelectedItems(item: Item) {
-            if (selectedItems.contains(item)) {
-                selectedItems.removeAll(where: { $0 == item })
-            }
-            else {
-                selectedItems.append(item)
-            }
-        }
-        
-        func orderItems() {
-            
-        }
-    }
-}
-
 struct SubmitOrder_Previews: PreviewProvider {
     static var previews: some View {
         SubmitOrder()
