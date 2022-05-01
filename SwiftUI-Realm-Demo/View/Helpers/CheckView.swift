@@ -8,39 +8,42 @@
 import SwiftUI
 
 struct CheckView: View {
-    @State var isChecked: Bool = false
+    @EnvironmentObject var viewModel: SubmitOrder.ViewModel
     
-    var title: String
-    var unitPrice: String
-    
-    var body: some View {
-       Button(action: toggle){
-           HStack{
-               Image(systemName: isChecked ? "checkmark.square": "square")
-               HStack {
-                   Text(title)
-                   Spacer()
-                   Text("- $\(unitPrice)")
-                       .frame(width: 65, alignment: .leading)
-               }
-               .foregroundColor(.black)
-               Spacer()
-           }
-       }
+    @State var item: Item
+    var isSelected: Bool {
+        viewModel.selectedItems.contains(item)
     }
     
-    func toggle() {
-        isChecked = !isChecked
+    var body: some View {
+        Button(action: {
+            viewModel.updateSelectedItems(item: item)
+        }) {
+            HStack {
+                Image(systemName: isSelected ? "checkmark.square": "square")
+                HStack {
+                    Text(item.itemDescription)
+                    Spacer()
+                    Text("- $\(String(format: "%.2f", item.unitPrice))")
+                        .frame(width: 65, alignment: .leading)
+                }
+                .foregroundColor(.black)
+                Spacer()
+            }
+        }
     }
 }
 
 struct CheckView_Previews: PreviewProvider {
     
+    static let viewModel = SubmitOrder.ViewModel()
+    
     static var previews: some View {
         Group {
-            CheckView(title: "Toothbrush", unitPrice: String(format: "%.2f", 1.00))
-            CheckView(title: "Toilet Paper", unitPrice: String(format: "%.2f", 2.50))
+            CheckView(item: Item(value: ["itemDescription": "Toothbrush", "unitPrice": 1.00]))
+            CheckView(item: Item(value: ["itemDescription": "Toilet Paper", "unitPrice": 2.50]))
         }
+        .environmentObject(viewModel)
         .previewLayout(.fixed(width: 300, height: 70))
     }
 }

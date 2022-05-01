@@ -12,7 +12,7 @@ struct SubmitOrder: View {
     @ObservedResults(Customer.self) var customers
     @ObservedResults(Item.self) var items
     
-    @StateObject private var viewModel = ViewModel()
+    @StateObject var viewModel = ViewModel()
     
     @State private var selectedCustomer = 0
     @State private var selected = false
@@ -32,12 +32,10 @@ struct SubmitOrder: View {
                 Section("Items to Order") {
                     List {
                         ForEach(items) { item in
-                            CheckView(title: item.itemDescription, unitPrice: String(format: "%.2f", item.unitPrice))
-                                .onTapGesture {
-                                    viewModel.updateSelectedItems(item: item)
-                                }
+                            CheckView(item: item)
                         }
                     }
+                    .environmentObject(viewModel)
                 }
                 Button("TEST ORDER DETAILS") {
                     showAlert = true
