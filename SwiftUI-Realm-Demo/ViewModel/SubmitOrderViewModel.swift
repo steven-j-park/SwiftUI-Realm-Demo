@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 extension SubmitOrder {
     class ViewModel: ObservableObject {
@@ -20,7 +21,13 @@ extension SubmitOrder {
             }
         }
         
-        func orderItems() {
+        func orderItems(customer: Customer) {
+            let order = Order(value: ["orderedBy": customer])
+            
+            let realm = try! Realm()
+            try! realm.write {
+                realm.add(order)
+            }
             
         }
     }

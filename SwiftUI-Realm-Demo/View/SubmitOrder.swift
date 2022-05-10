@@ -53,7 +53,7 @@ struct SubmitOrder: View {
 
                 
                 Button {
-                    return
+                    viewModel.orderItems(customer: customers[selectedCustomer])
                 } label: {
                     HStack {
                         Spacer()
