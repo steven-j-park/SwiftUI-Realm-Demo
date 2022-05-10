@@ -37,20 +37,6 @@ struct SubmitOrder: View {
                     }
                     .environmentObject(viewModel)
                 }
-                Button("TEST ORDER DETAILS") {
-                    showAlert = true
-                }
-                .alert("DEBUG ORDER DETAILS", isPresented: $showAlert) {
-                    Button(role: .destructive) {
-                        
-                    } label: {
-                        Text("OK")
-                    }
-
-                } message: {
-                    Text("\(viewModel.selectedItems.count)")
-                }
-
                 
                 Button {
                     viewModel.orderItems(customer: customers[selectedCustomer])
