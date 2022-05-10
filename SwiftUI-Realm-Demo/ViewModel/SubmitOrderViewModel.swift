@@ -22,14 +22,16 @@ extension SubmitOrder {
         }
         
         func orderItems(customer: Customer) -> Bool {
-            let order = Order(value: ["orderedBy": customer])
+            let order = Order()
             
-            let realm = try! Realm()
-            try! realm.write {
-                realm.add(order)
+            if let customerRec = customer.thaw() {
+                let realm = try! Realm()
+                try! realm.write {
+                    customerRec.orders.append(order)
+                }
+                return true
             }
-            
-            return true
+            return false
         }
     }
 }
