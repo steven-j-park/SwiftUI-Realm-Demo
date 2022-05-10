@@ -17,37 +17,51 @@ struct SubmitOrder: View {
     @State private var selectedCustomer = 0
     @State private var selected = false
     
+    @State private var showOrderSubmitted = false
+    
     var body: some View {
         NavigationView {
-            Form {
-                Section {
-                    Picker("Order for", selection: $selectedCustomer) {
-                        ForEach(0..<customers.count, id: \.self) { index in
-                            Text(customers[index].name)
+            ZStack {
+                Form {
+                    Section {
+                        Picker("Order for", selection: $selectedCustomer) {
+                            ForEach(0..<customers.count, id: \.self) { index in
+                                Text(customers[index].name)
+                            }
+                        }
+                    }
+                    Section("Items to Order") {
+                        List {
+                            ForEach(items) { item in
+                                CheckView(item: item)
+                            }
+                        }
+                        .environmentObject(viewModel)
+                    }
+                    
+                    Button {
+                        viewModel.orderItems(customer: customers[selectedCustomer])
+                    } label: {
+                        HStack {
+                            Spacer()
+                            Image(systemName: "cart.badge.plus")
+                            Text("Order Now")
+                            Spacer()
                         }
                     }
                 }
-                Section("Items to Order") {
-                    List {
-                        ForEach(items) { item in
-                            CheckView(item: item)
-                        }
-                    }
-                    .environmentObject(viewModel)
-                }
-                
-                Button {
-                    viewModel.orderItems(customer: customers[selectedCustomer])
-                } label: {
-                    HStack {
-                        Spacer()
-                        Image(systemName: "cart.badge.plus")
-                        Text("Order Now")
-                        Spacer()
-                    }
+                .navigationTitle("Submit Order")
+                if showOrderSubmitted {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.gray)
+                        .frame(width: 300, height: 30)
+                        .opacity(0.25)
+                        .overlay(
+                            Text("Order Submitted")
+                                .font(.headline)
+                        )
                 }
             }
-            .navigationTitle("Submit Order")
         }
     }
 }
