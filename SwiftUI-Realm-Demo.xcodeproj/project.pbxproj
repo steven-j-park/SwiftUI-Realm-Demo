@@ -20,7 +20,6 @@
 		DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B72816FDAB00E8BC90 /* CustomerList.swift */; };
 		DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */; };
 		DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530BC2817277B00E8BC90 /* CheckView.swift */; };
-		DB77DA1C281F3C3300753713 /* bundled.realm in Resources */ = {isa = PBXBuildFile; fileRef = DB77DA1B281F3C3300753713 /* bundled.realm */; };
 		DB77DA1F281F409300753713 /* SubmitOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		DB2530B72816FDAB00E8BC90 /* CustomerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerList.swift; sourceTree = "<group>"; };
 		DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrder.swift; sourceTree = "<group>"; };
 		DB2530BC2817277B00E8BC90 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
-		DB77DA1B281F3C3300753713 /* bundled.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bundled.realm; sourceTree = "<group>"; };
 		DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				DB77DA1D281F406700753713 /* ViewModel */,
-				DB77DA1B281F3C3300753713 /* bundled.realm */,
 				DB25309B2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift */,
 				DB2530BB2817000800E8BC90 /* View */,
 				DB25309F2816F1DE00E8BC90 /* Assets.xcassets */,
@@ -197,7 +194,6 @@
 			files = (
 				DB2530A32816F1DE00E8BC90 /* Preview Assets.xcassets in Resources */,
 				DB2530A02816F1DE00E8BC90 /* Assets.xcassets in Resources */,
-				DB77DA1C281F3C3300753713 /* bundled.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
