@@ -65,6 +65,7 @@ struct SubmitOrder: View {
                             Text("Order Submitted")
                                 .font(.headline)
                         )
+                        .offset(y: 20)
                 }
             }
         }
