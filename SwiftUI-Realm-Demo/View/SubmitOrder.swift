@@ -17,8 +17,6 @@ struct SubmitOrder: View {
     @State private var selectedCustomer = 0
     @State private var selected = false
     
-    @State private var showAlert = false
-    
     var body: some View {
         NavigationView {
             Form {
