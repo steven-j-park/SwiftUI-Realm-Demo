@@ -21,7 +21,7 @@ extension SubmitOrder {
             }
         }
         
-        func orderItems(customer: Customer) {
+        func orderItems(customer: Customer) -> Bool {
             let order = Order(value: ["orderedBy": customer])
             
             let realm = try! Realm()
@@ -29,6 +29,7 @@ extension SubmitOrder {
                 realm.add(order)
             }
             
+            return true
         }
     }
 }
