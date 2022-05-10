@@ -40,7 +40,12 @@ struct SubmitOrder: View {
                     }
                     
                     Button {
-                        viewModel.orderItems(customer: customers[selectedCustomer])
+                        if viewModel.orderItems(customer: customers[selectedCustomer]) == true {
+                            showOrderSubmitted = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                showOrderSubmitted = false
+                            }
+                        }
                     } label: {
                         HStack {
                             Spacer()
