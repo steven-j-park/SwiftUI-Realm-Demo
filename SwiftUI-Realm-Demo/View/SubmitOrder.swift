@@ -42,7 +42,7 @@ struct SubmitOrder: View {
                     Button {
                         if viewModel.orderItems(customer: customers[selectedCustomer]) == true {
                             showOrderSubmitted = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                                 showOrderSubmitted = false
                             }
                         }
