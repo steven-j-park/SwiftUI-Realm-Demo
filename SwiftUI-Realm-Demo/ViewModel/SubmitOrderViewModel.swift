@@ -24,6 +24,12 @@ extension SubmitOrder {
         func orderItems(customer: Customer) -> Bool {
             let order = Order()
             
+            for item in selectedItems {
+                if let thawedItem = item.thaw() {
+                    order.orderDetails.append(thawedItem)
+                }
+            }
+            
             if let customerRec = customer.thaw() {
                 let realm = try! Realm()
                 try! realm.write {
