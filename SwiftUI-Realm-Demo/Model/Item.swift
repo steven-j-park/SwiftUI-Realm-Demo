@@ -11,6 +11,4 @@ class Item: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var itemDescription: String
     @Persisted var unitPrice: Double
-    
-    @Persisted var orderDetails: List<OrderDetail>
 }

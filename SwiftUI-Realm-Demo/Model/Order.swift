@@ -12,7 +12,7 @@ class Order: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var orderDate = Date()
     
-    @Persisted var orderDetails: List<OrderDetail>
+    @Persisted var orderDetails: List<Item>
     
     @Persisted(originProperty: "orders") var orderedBy: LinkingObjects<Customer>
 }
