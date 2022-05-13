@@ -13,9 +13,11 @@ struct SwiftUI_Realm_DemoApp: SwiftUI.App {
     //var realmURL: URL
     
     init() {
-        let realm = try! Realm()
-        print("Realm is located at:", realm.configuration.fileURL!)
+        /* --- Open default realm and get filepath --- */
+        //let realm = try! Realm()
+        //print("Realm is located at:", realm.configuration.fileURL!)
         
+        /* --- Use bundled realm --- */
         //realmURL = Bundle.main.url(forResource: "bundled", withExtension: "realm")!
     }
     
