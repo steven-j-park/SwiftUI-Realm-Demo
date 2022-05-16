@@ -12,12 +12,25 @@ struct OrderList: View {
     @ObservedRealmObject var customer: Customer
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(customer.orders) { order in
+                NavigationLink {
+                    
+                } label: {
+                    Text("\(OrderListViewModel().getFormattedDateTime(date: order.orderDate))")
+                }
+            }
+        }
+        .navigationTitle("Orders")
     }
 }
 
-struct OrderList_Previews: PreviewProvider {
-    static var previews: some View {
-        OrderList()
+extension OrderList {
+    class OrderListViewModel {
+        func getFormattedDateTime(date: Date) -> String {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            return dateFormatter.string(from: date)
+        }
     }
 }
