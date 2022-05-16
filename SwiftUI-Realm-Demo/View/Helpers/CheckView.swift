@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CheckView: View {
-    @EnvironmentObject var viewModel: SubmitOrder.ViewModel
+    @EnvironmentObject var viewModel: SubmitOrder.SubmitOrderViewModel
     
     @State var item: Item
     var isSelected: Bool {
@@ -36,7 +36,7 @@ struct CheckView: View {
 
 struct CheckView_Previews: PreviewProvider {
     
-    static let viewModel = SubmitOrder.ViewModel()
+    static let viewModel = SubmitOrder.SubmitOrderViewModel()
     
     static var previews: some View {
         Group {

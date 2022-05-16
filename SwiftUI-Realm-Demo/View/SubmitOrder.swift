@@ -12,7 +12,7 @@ struct SubmitOrder: View {
     @ObservedResults(Customer.self) var customers
     @ObservedResults(Item.self) var items
     
-    @StateObject var viewModel = ViewModel()
+    @StateObject var viewModel = SubmitOrderViewModel()
     
     @State private var selectedCustomer = 0
     @State private var selected = false

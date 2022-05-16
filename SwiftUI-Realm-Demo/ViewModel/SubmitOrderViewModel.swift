@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 extension SubmitOrder {
-    class ViewModel: ObservableObject {
+    class SubmitOrderViewModel: ObservableObject {
         @Published var selectedItems: [Item] = []
         
         func updateSelectedItems(item: Item) {
