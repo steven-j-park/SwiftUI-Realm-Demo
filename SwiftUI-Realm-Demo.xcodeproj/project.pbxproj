@@ -77,7 +77,7 @@
 		DB25309A2816F1DD00E8BC90 /* SwiftUI-Realm-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DB5D53592835DF3F002FAF15 /* seed.realm */,
+				DB5D535B2835DF59002FAF15 /* Resources */,
 				DB25309B2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift */,
 				DB77DA1D281F406700753713 /* ViewModel */,
 				DB2530BB2817000800E8BC90 /* View */,
@@ -125,6 +125,14 @@
 				DB2530BC2817277B00E8BC90 /* CheckView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB5D535B2835DF59002FAF15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D53592835DF3F002FAF15 /* seed.realm */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DB77DA1D281F406700753713 /* ViewModel */ = {
