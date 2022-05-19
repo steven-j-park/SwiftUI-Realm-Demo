@@ -41,6 +41,7 @@
 		DB2530BC2817277B00E8BC90 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		DB5D53592835DF3F002FAF15 /* seed.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = seed.realm; sourceTree = "<group>"; };
+		DB5D535C2835E5A8002FAF15 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrderViewModel.swift; sourceTree = "<group>"; };
 		DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +62,7 @@
 		DB25308F2816F1DD00E8BC90 = {
 			isa = PBXGroup;
 			children = (
+				DB5D535C2835E5A8002FAF15 /* README.md */,
 				DB25309A2816F1DD00E8BC90 /* SwiftUI-Realm-Demo */,
 				DB2530992816F1DD00E8BC90 /* Products */,
 			);
