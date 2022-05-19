@@ -12,7 +12,7 @@
   On first run, the bundled realm file will be copied to your default Realm directory.
 
   To get your Realm directory, un-comment the below lines in SwiftUI_Realm_DemoApp.swift.\
-  Note: A new Realm (in a new directory) will be created for each device you run the project on.
+  You can then navigate to the corresponding directory and manually update the data in it.
   
 ```swift
   let realm = try! Realm()
