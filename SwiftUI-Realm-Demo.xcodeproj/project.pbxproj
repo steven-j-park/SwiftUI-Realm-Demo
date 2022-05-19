@@ -20,6 +20,7 @@
 		DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B72816FDAB00E8BC90 /* CustomerList.swift */; };
 		DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */; };
 		DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530BC2817277B00E8BC90 /* CheckView.swift */; };
+		DB5D53402835C3BB002FAF15 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */; };
 		DB77DA1F281F409300753713 /* SubmitOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */; };
 		DBA3E87B2831E0D600D4840F /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		DB2530B72816FDAB00E8BC90 /* CustomerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerList.swift; sourceTree = "<group>"; };
 		DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrder.swift; sourceTree = "<group>"; };
 		DB2530BC2817277B00E8BC90 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrderViewModel.swift; sourceTree = "<group>"; };
 		DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				DB2530B72816FDAB00E8BC90 /* CustomerList.swift */,
 				DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */,
 				DB0ACE36282EB7A40067E572 /* OrderList.swift */,
+				DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */,
 				DB2530BE2817A49400E8BC90 /* Helpers */,
 			);
 			path = View;
@@ -210,6 +213,7 @@
 				DB2530B32816FB2E00E8BC90 /* Item.swift in Sources */,
 				DB77DA1F281F409300753713 /* SubmitOrderViewModel.swift in Sources */,
 				DB0ACE37282EB7A40067E572 /* OrderList.swift in Sources */,
+				DB5D53402835C3BB002FAF15 /* OrderDetail.swift in Sources */,
 				DBA3E87B2831E0D600D4840F /* OrderListViewModel.swift in Sources */,
 				DB2530AF2816F51F00E8BC90 /* Customer.swift in Sources */,
 				DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */,
