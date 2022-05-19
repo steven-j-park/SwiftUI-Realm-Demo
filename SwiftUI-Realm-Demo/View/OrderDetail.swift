@@ -28,23 +28,3 @@ struct OrderDetail: View {
         .navigationTitle("Order Details")
     }
 }
-
-extension OrderDetail {
-    class OrderDetailViewModel {
-        
-        func getTotal(items: RealmSwift.List<Item>) -> Double {
-            var total: Double = 0
-            for item in items {
-                total += item.unitPrice
-            }
-            
-            return total
-        }
-    }
-}
-
-//struct OrderDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        OrderDetail()
-//    }
-//}

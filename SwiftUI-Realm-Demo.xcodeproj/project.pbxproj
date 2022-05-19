@@ -22,6 +22,7 @@
 		DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530BC2817277B00E8BC90 /* CheckView.swift */; };
 		DB5D53402835C3BB002FAF15 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */; };
 		DB5D535A2835DF3F002FAF15 /* seed.realm in Resources */ = {isa = PBXBuildFile; fileRef = DB5D53592835DF3F002FAF15 /* seed.realm */; };
+		DB5D535E2835F1EC002FAF15 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D535D2835F1EC002FAF15 /* OrderDetailViewModel.swift */; };
 		DB77DA1F281F409300753713 /* SubmitOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */; };
 		DBA3E87B2831E0D600D4840F /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		DB5D53592835DF3F002FAF15 /* seed.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = seed.realm; sourceTree = "<group>"; };
 		DB5D535C2835E5A8002FAF15 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DB5D535D2835F1EC002FAF15 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
 		DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrderViewModel.swift; sourceTree = "<group>"; };
 		DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 			children = (
 				DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */,
 				DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */,
+				DB5D535D2835F1EC002FAF15 /* OrderDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				DB5D53402835C3BB002FAF15 /* OrderDetail.swift in Sources */,
 				DBA3E87B2831E0D600D4840F /* OrderListViewModel.swift in Sources */,
 				DB2530AF2816F51F00E8BC90 /* Customer.swift in Sources */,
+				DB5D535E2835F1EC002FAF15 /* OrderDetailViewModel.swift in Sources */,
 				DB2530B82816FDAB00E8BC90 /* CustomerList.swift in Sources */,
 				DB25309E2816F1DD00E8BC90 /* ContentView.swift in Sources */,
 				DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */,
