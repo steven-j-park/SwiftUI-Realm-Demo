@@ -21,6 +21,7 @@
 		DB2530BA2816FDB900E8BC90 /* SubmitOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */; };
 		DB2530BD2817277B00E8BC90 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2530BC2817277B00E8BC90 /* CheckView.swift */; };
 		DB5D53402835C3BB002FAF15 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */; };
+		DB5D535A2835DF3F002FAF15 /* seed.realm in Resources */ = {isa = PBXBuildFile; fileRef = DB5D53592835DF3F002FAF15 /* seed.realm */; };
 		DB77DA1F281F409300753713 /* SubmitOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */; };
 		DBA3E87B2831E0D600D4840F /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		DB2530B92816FDB900E8BC90 /* SubmitOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrder.swift; sourceTree = "<group>"; };
 		DB2530BC2817277B00E8BC90 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		DB5D533F2835C3BB002FAF15 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		DB5D53592835DF3F002FAF15 /* seed.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = seed.realm; sourceTree = "<group>"; };
 		DB77DA1E281F409300753713 /* SubmitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitOrderViewModel.swift; sourceTree = "<group>"; };
 		DBA3E87A2831E0D600D4840F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		DB25309A2816F1DD00E8BC90 /* SwiftUI-Realm-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DB5D53592835DF3F002FAF15 /* seed.realm */,
 				DB25309B2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift */,
 				DB77DA1D281F406700753713 /* ViewModel */,
 				DB2530BB2817000800E8BC90 /* View */,
@@ -200,6 +203,7 @@
 			files = (
 				DB2530A32816F1DE00E8BC90 /* Preview Assets.xcassets in Resources */,
 				DB2530A02816F1DE00E8BC90 /* Assets.xcassets in Resources */,
+				DB5D535A2835DF3F002FAF15 /* seed.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
