@@ -15,7 +15,7 @@ struct OrderList: View {
         List {
             ForEach(customer.orders) { order in
                 NavigationLink {
-                    
+                    OrderDetail(items: order.orderDetails)
                 } label: {
                     Text("\(OrderListViewModel().getFormattedDateTime(date: order.orderDate))")
                 }
