@@ -12,7 +12,7 @@ struct OrderDetail: View {
     @ObservedRealmObject var items: RealmSwift.List<Item>
     
     var body: some View {
-        VStack {
+        List {
             ForEach(items) { item in
                 HStack {
                     Text(item.itemDescription)
@@ -22,9 +22,10 @@ struct OrderDetail: View {
             }
             HStack {
                 Spacer()
-                Text(String(format: "%.2f", OrderDetailViewModel().getTotal(items: items)))
+                Text("Total: \(String(format: "%.2f", OrderDetailViewModel().getTotal(items: items)))")
             }
         }
+        .navigationTitle("Order Details")
     }
 }
 
