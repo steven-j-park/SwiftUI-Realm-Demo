@@ -77,13 +77,13 @@
 		DB25309A2816F1DD00E8BC90 /* SwiftUI-Realm-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DB5D535B2835DF59002FAF15 /* Resources */,
 				DB25309B2816F1DD00E8BC90 /* SwiftUI_Realm_DemoApp.swift */,
-				DB77DA1D281F406700753713 /* ViewModel */,
 				DB2530BB2817000800E8BC90 /* View */,
-				DB25309F2816F1DE00E8BC90 /* Assets.xcassets */,
-				DB2530A12816F1DE00E8BC90 /* Preview Content */,
 				DB2530B62816FC9700E8BC90 /* Model */,
+				DB77DA1D281F406700753713 /* ViewModel */,
+				DB5D535B2835DF59002FAF15 /* Resources */,
+				DB2530A12816F1DE00E8BC90 /* Preview Content */,
+				DB25309F2816F1DE00E8BC90 /* Assets.xcassets */,
 			);
 			path = "SwiftUI-Realm-Demo";
 			sourceTree = "<group>";
