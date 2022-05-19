@@ -21,7 +21,7 @@ struct SubmitOrder: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            VStack {
                 Form {
                     Section {
                         Picker("Order for", selection: $selectedCustomer) {
@@ -65,7 +65,6 @@ struct SubmitOrder: View {
                             Text("Order Submitted")
                                 .font(.headline)
                         )
-                        .offset(y: 20)
                 }
             }
         }
