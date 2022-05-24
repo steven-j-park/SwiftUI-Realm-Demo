@@ -1,3 +1,6 @@
+##  Overview
+This demo project is intended to serve as an example of Realm implementation in a mock e-commerce, SwiftUI iOS application.
+
 ##  How to Use
 - Opening the project for the first time
 
@@ -18,3 +21,12 @@
   let realm = try! Realm()
   print("Realm is located at:", realm.configuration.fileURL!)
 ```
+
+## Preview
+1. Submitting Orders
+
+![Ordering](https://spark-project-resources.s3.amazonaws.com/SwiftUI-Realm-Demo/ordering.gif)
+
+2. Reviewing Order Details
+
+![Order Details](https://spark-project-resources.s3.amazonaws.com/SwiftUI-Realm-Demo/order_details.gif)
